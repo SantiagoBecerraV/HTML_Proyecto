@@ -1,0 +1,36 @@
+:root{
+    --fondo-pagina:  #ff5b52;
+    --fondo-tarjeta: #3A57B5;
+    --fondo-cualquiera: #ff6b63;
+    --fondo-borde: #ffadad;
+    --fondo-degradado-borde: #660d08; 
+}
+
+body{
+    margin: 0;
+    padding: 40px;
+    background: linear-gradient(90deg, var(--fondo-pagina), var(--fondo-cualquiera));
+    font-family: orbitron,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+.card{
+    background-color: #dd3c34;
+    border-radius: 40px;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 25px rgba(255, 13, 0, 0.9);
+    border: 2px solid var(--fondo-borde);
+    animation: pulseglow 1s infinite alternate;
+}
+
+@keyframes pulseglow {
+    from{
+        box-shadow: 0 0 10px var(--fondo-borde), 0 0 20px var(--fondo-degradado-borde) ;
+    }
+    to{
+        box-shadow: 0 0 20px var(--fondo-borde), 0 0 35px var(--fondo-degradado-borde) ;
+    }
+
+}
