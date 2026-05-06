@@ -92,6 +92,10 @@ ol, ul{
     box-sizing: border-box;
 }
 
+.card:hover{
+        transform: scale(1.02);
+}
+
 .centrado{
     display: flex;
     justify-content: center;
